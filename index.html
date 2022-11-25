@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        background-color: rgb(35, 35, 35);
+        overflow-x: hidden;
+    }
+    /* main {
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    #first-container {
+        width: 100%;
+
+        background-image: url("background.jpg");
+        background-color: linear-gradient(180deg, white, black);
+        color: white;
+        height: 800px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sign-in {
+        background: red;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100px;
+        color: white;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    #firstpara {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #secondpara {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    input[type="email"] {
+        width: 40em;
+        height: 50px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 10px;
+    }
+    .get-started {
+        padding: 20px;
+        width: 15em;
+        height: 72px;
+        color: white;
+        background-color: red;
+        border-radius: 5px;
+    }
+    #child-first {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-top: 12%;
+    }
+    #first-container section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 45px;
+        color: white;
+    }
+    .para-box {
+        width: 30px;
+        color: white;
+        margin: auto;
+    }
+    #thirdpara {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+    #fourthpara {
+        font-size: 27px;
+        margin-top: 20px;
+        color: white;
+    }
+    #fifthpara {
+        font-size: 27px;
+        margin-top: 20px;
+        color: white;
+    }
+    #sixthpara {
+        font-size: 27px;
+        margin-top: 20px;
+        color: white;
+    }
+    #seventhpara {
+        font-size: 20px;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+    }
+    #second-container {
+        /* display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; */
+        width: 100%;
+        background-color: black;
+        margin-top: 12px;
+    }
+    #seventh-container {
+        width: 100%;
+        background-color: black;
+        margin-top: 12px;
+        color: white;
+        opacity: 0.5;
+        height: 400px;
+}
+#sixth-container {
+    width: 100%;
+    background-color: black;
+    height: 1200px;
+    margin-top: 12px;
+    color: white;
+    height: 150%;
+    padding: 50px;
+}
+#sixth-container section button{
+    width: 22.05em;
+    height: 90px;
+    /* border-radius: 5px; */
+    background-color: rgb(63, 63, 63);
+    color: white;
+    margin-top: 15px;
+    text-align: left;
+    padding: 30px;
+    font-size: 30px;
+}
+#sixth-container section div{
+    width: 20.7em;
+    /*height: 70px; */
+    /*border-radius: 5px; */
+    background-color: rgb(63, 63, 63);
+    color: white;
+    margin-top: 3px;
+    text-align: left;
+    padding: 40px;
+    font-size: 28px;
+}
+#sixth-container section {
+    width: 40%;
+    margin: auto;
+}
+#seventh-container a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    font-size: 17px;
+}
+ul {
+    list-style-type: none;
+}
+#seventh-container a:hover {
+    text-decoration: underline;
+}
+#seventh-container sectiom{
+    display: grid;
+    grid-template-areas: 'one two three four';
+    gap: 20px;
+    width: 70%;
+    background-color: black;
+    margin-top: 50px;
+    margin: auto;
+}
+#seventh-container :first-child div{
+    margin-top: 50px;
+}
+#fourth-container {
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    width: 100%;
+    background-color: black;
+    margin-top: 12px;
+    padding: 70px;
+}
+#child-fourth {
+    width: 30rem;
+    color: white;
+    /*margin: auto;*/
+}
+#second-container section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: black;
+    margin-top: 12px;
+    margin: auto;
+}
+#third-container {
+    /*display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    width: 100%;
+    background-color: black;
+    margin-top: 12px;
+}
+#third-container section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: black;
+    margin-top: 20px;
+    margin: auto;
+}
+#fifth-container {
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    width: 100%;
+    background-color: black;
+    margin-top: 12px;
+}
+#fifth-container section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: black;
+    margin-top: 20px;
+    margin: auto;
+}
+.spacing {
+    gap: 15px;
+}
+img[alt="tv stand"] {
+    width: 400px;
+    height: 400px;
+    margin-right: 150px;
+}
+
+</style>
+<body>
+    <main>
+        <div id="first-container">
+            <header>
+                <p>NETFLIX</p>
+                <button>Sign In</button>
+            </header>
+            <div id="child-first">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p id="firstpara">Watch anywhere. Cancel anytime</p>
+                <p id="secondpara">Ready to watch? Enter your email to create or restart 
+                    your membership
+                </p>
+                <section>
+                    <input type="email" placeholder="Email address">
+                    <button>Get Started</button>
+                </section>
+            </div>
+        </div>
+        <div>
+            <div id="second-container">
+                <section>
+            <h2>Enjoy on your TV</h2>
+            <p id="thirdpara">Watch on Smart TVs, Playstation, xbox, Chromecast,Apple TV,
+                Blu-ray players, and more.
+            </p>
+            </div>
+            <div>
+                <img src="tv.png" alt="tv stand">
+            </div>
+        </section>
+        </div>
+        <div id="third-container">
+            <section>
+                <div>
+                    <div><img src="mobile-0819.jpg" alt="mobile"></div>
+                    <div><img src="boxshot.png" alt="boxshot">
+                    <p>Stranger Things</p>
+                    <p>Downloading...</p>
+                </div>
+                </div>
+                <div class="para-box">
+                    <h2>Download your shows to watch offline.</h2>
+                    <p id="fourthpara">Save your favorites easily and always have something to watch.</p>
+                </div>
+            </section>
+        </div>
+        <div id="fourth-container">
+            <div id="child-fourth">
+                <h2>Watch everywhere.</h2>
+                <p id="fifthpara">Stream unlimited movies and TV shows on your phone, tablet laptop, and TV</p>
+        </div>
+        </div>
+        <div id="fifth-container">
+            <section>
+                <div><img src="kids.png" alt="kids-cartoon"></div>
+                <div class="para-box">
+                    <h2>Create profiles for kids.</h2>
+                    <p id="sixthpara">Send kids on adventures with their favorite characters in a space made just for them-free with your membership.</p>
+                </div>
+            </section>
+            </div>
+            <div id="sixth-container">
+                <h2 style="text-align: center;">Frequently Asked Questions</h2>
+                <section>
+                    <button>
+                        What is Netflix?
+                    </button>
+                    <div>
+                        <p>Netflix is a streaming service that offers a wide variety of award-wining TV shows, movies, anime, documentaries, and more on thousands of internet--connected devices.
+                            <br>
+                            You can watch as much as you want, whenever you want without s aingle commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week.
+                        </p>
+                    </div>
+                    <button>
+                        How much does Netflix cost?
+                    </button>
+                    <div>
+                        <p>Watch Netflix on your smartphone, tablets, smart TV, laptop, or streaming device,
+                             all for one fixed monthly fee. Plans range from 1,200 to 4,00 a month. 
+                             No extra costs, no contracts.</p>
+                    </div>
+                    <button>
+                        Where can i watch?
+                    </button>
+                    <div>
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly
+                            on the web at netflix.com from your personal computer or on any internet-connected
+                            device that offers the Netflix app, including smart TVs, smartphones, tablets,
+                            streaming media players and game consoles. 
+                            <br>
+                            You can also download your faorite shows with the ioS, Andriod, or Windows 10 app.
+                            Use downloads to watch while you're on the go and withour an internet connection.
+                            Take Netflix with you anywhere.
+                        </p>
+                    </div>
+                    <button>
+                        How can i cancel?
+                    </button>
+                    <div>
+                        <p>Netflix is flexible. There are no pesky contarcts and no commitments. You can easily
+                            cancel your account online in two clicks. There are no cancellation fees - start or stop 
+                            your account anytime.
+                        </p>
+                    </div>
+                    <button>
+                        What can I watch on Netflix?
+                    </button>
+                    <div>
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, 
+                            award-wining Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                    <button>
+                        Is Netflix good for kids?
+                    </button>
+                    <div>
+                        <p> The Netflix kids experience is included in your membership to give parents control while
+                            kids enjoy famil-friendly TV shows and movies in their space.
+                            <br>
+                            Kids profiles come with PIN-protected parental controls that let you restrict 
+                            the maturity rating of content kids can watch and block specific titles you dont want kids to see.
+                        </p>
+                    </div>
+                    </section>
+                    <p id="seventhpara">Ready to watch? Enter your email to create pr restart your membership.</p>
+                    <div style="display: flex; justify-content: center; margin-left: 100px; margin-top: 50px;"><input type="email" placeholder="Email address">
+                    </div>
+                    <button class="get-started">
+                        Get Started
+                    </button>
+                    </div>
+            <div id="seventh-container">
+                <div>
+                <p style="font-size: 22px; padding-top: 100px; margin-left: 100px;">Questions? Contact us.</p>
+                <section>
+                <div id="one" style="width: 9em;">
+                    <ul>
+                        <a href="#"><li>FAQ</li></a><br>
+                        <a href="#"><li>Investor Relations</li></a>
+                        <a href="#"><li>Privacy</li></a>
+                        <a href="#"><li>Speed Test</li></a>
+                    </ul>
+                </div>
+                <div id="two" style="width: 9em;" >
+                    <ul>
+                        <a href="#"><li>Help Center</li></a>
+                        <a href="#"><li>Jobs</li></a>
+                        <a href="#"><li>Cookie Preferences</li></a>
+                        <a href="#"><li>Legal Notices</li></a>
+                    </ul>
+                </div>
+                <div id="three" style="width: 10em" >
+                    <ul>
+                        <a href="#"><li>Account</li></a>
+                        <a href="#"><li>Ways to Watch></a>
+                        <a href="#"><li>Corporate Information</li></a>
+                        <a href="#"><li>Only on Netflix</li></a>
+                    </ul>
+                </div>
+                <div id="four" style="width: 9em;" >
+                    <ul>
+                        <a href="#"><li>Media Center</li></a>
+                        <a href="#"><li>Terms of Use</li></a>
+                        <a href="#"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+                </section>
+            </div>
+            <p style="font-size: 17px; padding-top: 30px; margin-left: 115px;">Netflix Nigeria</p>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
